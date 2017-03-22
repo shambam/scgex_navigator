@@ -8,3 +8,14 @@ library(rgl)
 color.gradient <- function(x, colors=c("green","black","red"), colsteps=50) {
   return( (colorRampPalette(colors) (colsteps) [ findInterval(x, seq(min(x),max(x), length.out=colsteps)) ] ))
 }
+
+
+#'Plots a £d rgl plot higlighting selected cells
+#'@param proj A 3-column matrix of coordinates
+#'@param ind The rows requiring highlighting
+#'@keywords 3D scatter highlighted cells
+rgl.points.sel <- function(proj,ind){
+
+    rgl.points(proj[-ind,],col="black")
+    rgl.points(proj[ind,],col="orange")
+}
