@@ -1,4 +1,10 @@
 library(rgl)
+library(cellrangerRkit)
+library(Biobase)
+
+setClass("SCDataSet",contains="ExpressionSet",
+  slots=c(DDRtree_coods="matrix",
+          TSNE_coods="matrix"))
 
 #'Sets the color scale for a given vector of values
 #'@param x A vector of values
@@ -19,5 +25,3 @@ rgl.points.sel <- function(proj,ind){
     rgl.points(proj[-ind,],col="black")
     rgl.points(proj[ind,],col="orange")
 }
-
-fhshfjkshfkj
