@@ -1,4 +1,3 @@
-
 library(rgl)
 #'Sets the color scale for a given vector of values
 #'@param x A vector of values
@@ -12,7 +11,7 @@ color.gradient <- function(x, colors=c("green","black","red"), colsteps=50) {
 #'@param proj A 3-column matrix of coordinates
 #'@param ind The rows requiring highlighting
 #'@keywords 3D scatter highlighted cells
-rgl.points.sel <- function(proj,ind){
+rgl.points.hl.selected <- function(proj,ind){
 
     rgl.points(proj[-ind,],col="black")
     rgl.points(proj[ind,],col="orange")
