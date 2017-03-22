@@ -20,4 +20,6 @@ extract_from_cellranger <- function(path,build=c("mm10","hg38")){
   split_cellid <- as.numeric(unlist(strsplit(as.vector(pData(cro)[,1]),"-")))
   groups <- split_cellID[seq(2,length(split_cellID),by=2)]
 
+ featureData <- fData(cro)
+
 }
