@@ -19,3 +19,5 @@ rgl.points.sel <- function(proj,ind){
     rgl.points(proj[-ind,],col="black")
     rgl.points(proj[ind,],col="orange")
 }
+
+c <- 1:10
