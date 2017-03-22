@@ -3,16 +3,7 @@
 \docType{class}
 \name{SCDataSet-class}
 \alias{SCDataSet-class}
-\title{Plots a £d rgl plot higlighting selected cells}
-\arguments{
-\item{proj}{A 3-column matrix of coordinates}
-
-\item{ind}{The rows requiring highlighting}
-}
+\title{Class definition of the SCDataSet}
 \description{
-Plots a £d rgl plot higlighting selected cells
+Class definition of the SCDataSet
 }
-\keyword{3D}
-\keyword{cells}
-\keyword{highlighted}
-\keyword{scatter}
