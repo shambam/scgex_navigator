@@ -4,14 +4,14 @@ library(rgl)
 #'@param colors Base colors
 #'@param colsteps The number of bins required
 #'@keywords color scale
-color.gradient <- function(x, colors=c("green","black","red"), colsteps=50) {
+color_gradient <- function(x, colors=c("green","black","red"), colsteps=50) {
   return( (colorRampPalette(colors) (colsteps) [ findInterval(x, seq(min(x),max(x), length.out=colsteps)) ] ))
 }
-#'Plots a £d rgl plot higlighting selected cells
+#'Plots a 3d rgl plot higlighting selected cells
 #'@param proj A 3-column matrix of coordinates
 #'@param ind The rows requiring highlighting
 #'@keywords 3D scatter highlighted cells
-rgl.points.hl.selected <- function(proj,ind){
+rgl_points_hl_selected <- function(proj,ind){
 
     rgl.points(proj[-ind,],col="black")
     rgl.points(proj[ind,],col="orange")
