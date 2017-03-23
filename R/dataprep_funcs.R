@@ -31,13 +31,13 @@ extract_from_cellranger <- function(path,build=c("mm10","hg38")){
 #'@keywords cellranger monocle
 #'@export cellranger2monocle
 cellranger2monocle <- function(cellrext){
-  pd <- cbind(colnames(cellrext$exprdata),cellrext$groups)
+  pd <- cbind(colnames(cellrext$exprs),cellrext$groups)
   colnames(pd) <- c("CellID","Expt")
 
   pdata <-  new("AnnotatedDataFrame", data = as.data.frame(pd))
   fdata <- new("AnnotatedDataFrame", data = as.data.frame(cellrext$featureData))
 
-  cdco <- newCellDataSet(as(as.matrix(cellrext$exprdata), "sparseMatrix"),
+  cdco <- newCellDataSet(as(as.matrix(cellrext$exprs), "sparseMatrix"),
     phenoData = pdata,
     featureData = fdata,
     lowerDetectionLimit=1,
