@@ -31,7 +31,7 @@ extract_from_cellranger <- function(path,build=c("mm10","hg38")){
 #'@keywords cellranger monocle
 #'@export cellranger2monocle
 cellranger2monocle <- function(cellrext){
-  pd <- cbind(colnames(cellrext),cellrext$groups)
+  pd <- cbind(colnames(cellrext$exprdata),cellrext$groups)
   colnames(pd) <- c("CellID","Expt")
 
   pdata <-  new("AnnotatedDataFrame", data = as.data.frame(pd))
