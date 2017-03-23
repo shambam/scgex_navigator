@@ -17,6 +17,7 @@ extract_from_cellranger <- function(path,build=c("mm10","hg38")){
   split_cellid <- as.numeric(unlist(strsplit(as.vector(pData(cro)[,1]),"-")))
   groups <- split_cellid[seq(2,length(split_cellid),by=2)]
   featureData <- fData(cro)
+  colnames(featureData) <- c("ensemble","gene")
 
   ret <- list(exprs=exprdata,fdata=featureData,groups=groups)
   ret
