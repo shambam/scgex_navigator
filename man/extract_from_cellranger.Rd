@@ -12,7 +12,7 @@ extract_from_cellranger(path, build = c("mm10", "hg38"))
 \item{build}{The version of the build, default is "mm10", alternative is "hg38"}
 }
 \description{
-Extracts the components need from a cellRanger aggrergated file
+lkjfl;ksjd lksjdf lksdfj lksd fjslkdf slkdjf lskjd
 }
 \keyword{cellranger}
 \keyword{extract}

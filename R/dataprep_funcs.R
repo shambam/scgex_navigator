@@ -12,6 +12,7 @@ setClass("SCDataSet",contains="ExpressionSet",
 #'@param path A path to the cellranger output folder
 #'@param build The version of the build, default is "mm10", alternative is "hg38"
 #'@keywords cellranger extract
+#'@description lkjfl;ksjd lksjdf lksdfj lksd fjslkdf slkdjf lskjd
 #'@export extract_from_cellranger
 extract_from_cellranger <- function(path,build=c("mm10","hg38")){
 
