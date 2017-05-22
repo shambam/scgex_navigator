@@ -17,4 +17,5 @@ rgl_points_hl_selected <- function(proj,ind){
 
     rgl.points(proj[-ind,],col="black")
     rgl.points(proj[ind,],col="orange")
+    print(proj[1:10,1:10])
 }
