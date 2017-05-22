@@ -2,7 +2,7 @@
 % Please edit documentation in R/ss_funcs.R
 \name{rgl.points.sel}
 \alias{rgl.points.sel}
-\title{Plots a £d rgl plot higlighting selected cells}
+\title{Plots a 3d rgl plot higlighting selected cells}
 \usage{
 rgl.points.sel(proj, ind)
 }
@@ -12,7 +12,7 @@ rgl.points.sel(proj, ind)
 \item{ind}{The rows requiring highlighting}
 }
 \description{
-Plots a £d rgl plot higlighting selected cells
+Plots a 3d rgl plot higlighting selected cells
 }
 \keyword{3D}
 \keyword{cells}
